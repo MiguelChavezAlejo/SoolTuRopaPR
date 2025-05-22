@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TuRopaN")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f75547b5c60d9b15600d777184cd72fb695e5fcc")]
 [assembly: System.Reflection.AssemblyProductAttribute("TuRopaN")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TuRopaN")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
