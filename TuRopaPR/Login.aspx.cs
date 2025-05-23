@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -29,10 +30,11 @@ namespace TuRopaPR
                 // Guardar nombre y rol en sesión
                 Session["usuario"] = dt.Rows[0]["Nombres"].ToString();
                 Session["rol"] = dt.Rows[0]["id_rol"].ToString();
+                Session["Id_persona"] = dt.Rows[0]["Id_persona"].ToString();
 
                 // Obtener rol para decidir a qué página redirigir
                 string rol = dt.Rows[0]["id_rol"].ToString();
-
+                
                 if (rol == "2")
                 {
                     Response.Redirect("Principal.aspx");

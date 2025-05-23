@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "aU3HOPAn8xo=",
+  "dgSpecHash": "cfAfmBitsUQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Miguel\\Desktop\\SoolTuRopaPR\\TuRopaD\\TuRopaD.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\migue\\source\\repos\\MiguelChavezAlejo\\SoolTuRopaPR\\TuRopaD\\TuRopaD.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\migue\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\migue\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
+  ],
   "logs": []
 }

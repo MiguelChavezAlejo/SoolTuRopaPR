@@ -1,0 +1,12 @@
+C:\Users\migue\source\repos\MiguelChavezAlejo\SoolTuRopaPR\TuRopaN\bin\Debug\net6.0\TuRopaN.deps.json
+C:\Users\migue\source\repos\MiguelChavezAlejo\SoolTuRopaPR\TuRopaN\bin\Debug\net6.0\TuRopaN.dll
+C:\Users\migue\source\repos\MiguelChavezAlejo\SoolTuRopaPR\TuRopaN\bin\Debug\net6.0\TuRopaN.pdb
+C:\Users\migue\source\repos\MiguelChavezAlejo\SoolTuRopaPR\TuRopaN\obj\Debug\net6.0\TuRopaN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\migue\source\repos\MiguelChavezAlejo\SoolTuRopaPR\TuRopaN\obj\Debug\net6.0\TuRopaN.AssemblyInfoInputs.cache
+C:\Users\migue\source\repos\MiguelChavezAlejo\SoolTuRopaPR\TuRopaN\obj\Debug\net6.0\TuRopaN.AssemblyInfo.cs
+C:\Users\migue\source\repos\MiguelChavezAlejo\SoolTuRopaPR\TuRopaN\obj\Debug\net6.0\TuRopaN.csproj.CoreCompileInputs.cache
+C:\Users\migue\source\repos\MiguelChavezAlejo\SoolTuRopaPR\TuRopaN\obj\Debug\net6.0\TuRopaN.sourcelink.json
+C:\Users\migue\source\repos\MiguelChavezAlejo\SoolTuRopaPR\TuRopaN\obj\Debug\net6.0\TuRopaN.dll
+C:\Users\migue\source\repos\MiguelChavezAlejo\SoolTuRopaPR\TuRopaN\obj\Debug\net6.0\refint\TuRopaN.dll
+C:\Users\migue\source\repos\MiguelChavezAlejo\SoolTuRopaPR\TuRopaN\obj\Debug\net6.0\TuRopaN.pdb
+C:\Users\migue\source\repos\MiguelChavezAlejo\SoolTuRopaPR\TuRopaN\obj\Debug\net6.0\ref\TuRopaN.dll

@@ -16,23 +16,28 @@ namespace TuRopaPR
         }
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
-            // Capturamos los valores del formulario
-            string nombres = Request.Form["nombres"];
-            string apellidos = Request.Form["apellidos"];
-            string tipoDoc = Request.Form["tipoDocumento"];
-            string nroDoc = Request.Form["numeroDocumento"];
-            string correo = Request.Form["correo"];
-            string telefono = Request.Form["telefono"];
-            string fechaNaciStr = Request.Form["fechaNacimiento"];
-            DateTime fechaNaci = DateTime.Parse(fechaNaciStr); // Mejor con TryParse para robustez
+            string nombres = txtNombres.Text.Trim();
+            string apellidos = txtApellidos.Text.Trim();
+            string tipoDoc = ddlTipoDocumento.SelectedValue;
+            string nroDoc = txtNumeroDocumento.Text.Trim();
+            string correo = txtCorreo.Text.Trim();
+            string telefono = txtTelefono.Text.Trim();
+            string fechaNaciStr = txtFechaNacimiento.Text;
 
-            string usuario = nroDoc; // Usamos el DNI como usuario
-            string contrasenia = "123456"; // Contraseña por defecto o generada
-            int idRol = 2; // Donador
+            DateTime fechaNaci;
+            if (!DateTime.TryParse(fechaNaciStr, out fechaNaci))
+            {
+                // Mostrar error
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Fecha de nacimiento inválida');", true);
+                return;
+            }
+
+            string usuario = nroDoc;
+            string contrasenia = "123456";
+            int idRol = 2;
 
             DonadorCN negocio = new DonadorCN();
-            string resultado = negocio.RegistrarUsuario(
-                nroDoc, tipoDoc, nombres, apellidos, correo, telefono, fechaNaci, usuario, contrasenia, idRol);
+            string resultado = negocio.RegistrarUsuario(nroDoc, tipoDoc, nombres, apellidos, correo, telefono, fechaNaci, usuario, contrasenia, idRol);
 
             if (resultado == "OK")
             {
@@ -42,9 +47,9 @@ namespace TuRopaPR
             }
             else
             {
-                // Mostrar el error al usuario
                 ClientScript.RegisterStartupScript(this.GetType(), "alert", $"alert('{resultado}');", true);
             }
         }
+
     }
 }

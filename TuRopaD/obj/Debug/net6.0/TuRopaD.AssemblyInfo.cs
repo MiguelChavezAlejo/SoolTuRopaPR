@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TuRopaD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d826e6b1c590d7f55220c472174c40abdad23dc7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9806c10b9b384d6241becd0b6f3f197562345ccd")]
 [assembly: System.Reflection.AssemblyProductAttribute("TuRopaD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TuRopaD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
