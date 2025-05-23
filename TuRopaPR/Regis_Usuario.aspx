@@ -7,78 +7,60 @@
     <title>Registro de Donador - tuRopa</title>
     <style>
         * {
-            box-sizing: border-box; /* clave para mantener mismo ancho visual */
+            box-sizing: border-box;
         }
 
-        body {
+        body, html {
             margin: 0;
+            padding: 0;
+            height: 100%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
+            background: url('imagenes/proyec8.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
 
-        .container {
+        .overlay {
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(8px);
+            background-color: rgba(255, 255, 255, 0.2);
             display: flex;
             justify-content: center;
-            align-items: flex-start;
-            max-width: 1400px;
-            margin: 50px auto;
-            padding: 20px;
-            gap: 40px;
-        }
-
-        .image-box {
-            width: 45%;
-            display: flex;
             align-items: center;
-            justify-content: center;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-            padding: 20px;
-            height: 650px;
-        }
-
-        .image-box img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
+            padding: 40px;
         }
 
         .form-container {
-            width: 50%;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.6);
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(4px);
         }
 
         h2 {
             text-align: center;
             color: #333;
             margin-bottom: 30px;
-            font-size: 28px;
         }
 
         label {
             display: block;
-            margin-top: 20px;
+            margin-top: 15px;
+            font-weight: 600;
             color: #444;
-            font-weight: 500;
-            font-size: 15px;
         }
 
         input, select {
             width: 100%;
-            padding: 12px;
+            padding: 10px;
             height: 45px;
-            margin-top: 8px;
+            margin-top: 5px;
             border: 1px solid #ccc;
             border-radius: 8px;
             font-size: 15px;
-            background-color: #fefefe;
-            transition: border-color 0.3s;
-            appearance: none;
         }
 
         input:focus, select:focus {
@@ -90,7 +72,7 @@
             display: flex;
             justify-content: space-between;
             gap: 15px;
-            margin-top: 35px;
+            margin-top: 30px;
         }
 
         button {
@@ -121,16 +103,12 @@
 </head>
 <body>
 
-    <div class="container">
-        <!-- Imagen a la izquierda -->
-        <div class="image-box">
-            <img src="imagenes/proyec8.jpg" alt="Imagen decorativa de donación">
-        </div>
-
-        <!-- Formulario a la derecha -->
+    <!-- Fondo borroso -->
+    <div class="overlay">
+        <!-- Formulario centrado -->
         <div class="form-container">
             <h2>Registro de Donador</h2>
-            <form action="RegistroDonador.aspx" method="post">
+            <form action="Regis_Usuario.aspx" method="post">
                 <label for="nombres">Nombres:</label>
                 <input type="text" id="nombres" name="nombres" required>
 
@@ -147,16 +125,16 @@
                 <label for="numeroDocumento">Nro de Documento:</label>
                 <input type="text" id="numeroDocumento" name="numeroDocumento" pattern="\d+" title="Solo números" required>
 
+                  <label for="correo">Correo Electrinoco:</label>
+                 <input type="text" id="correo" name="correp" required>
+
+                 <label for="telefono">Telefono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+
                 <label for="fechaNacimiento">Fecha de nacimiento:</label>
                 <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
-
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion" required>
-
-                <label for="distrito">Distrito:</label>
-                <input type="text" id="distrito" name="distrito" required>
-
-                <label for="edad">Edad:</label>
+                              
+               <%-- <label for="edad">Edad:</label>
                 <input type="number" id="edad" name="edad" min="0" required>
 
                 <label for="genero">Género:</label>
@@ -165,7 +143,7 @@
                     <option value="Femenino">Femenino</option>
                     <option value="Masculino">Masculino</option>
                     <option value="Otro">Otro</option>
-                </select>
+                </select>--%>
 
                 <div class="button-group">
                     <button type="submit">Registrarse</button>
@@ -177,4 +155,3 @@
 
 </body>
 </html>
-

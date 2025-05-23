@@ -43,7 +43,7 @@
             <div>
                 <a href="PerfilUsuario.aspx">Mi perfil</a>
                 <a href="Donar.aspx">Donar</a>
-                <a href="Logout.aspx">Cerrar sesión</a>
+                <a href="Inicio.aspx">Cerrar sesión</a>
             </div>
         </div>
 

@@ -45,7 +45,7 @@
                 <a href="ListaTrabajadores.aspx">Trabajadores</a>
                 <a href="ListaDonadores.aspx">Donadores</a>
                 <a href="HistorialRutas.aspx">Historial de rutas</a>
-                <a href="Logout.aspx">Cerrar sesión</a>
+                <a href="Inicio.aspx">Cerrar sesión</a>
             </div>
         </div>
 
